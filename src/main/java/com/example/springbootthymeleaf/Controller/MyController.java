@@ -28,6 +28,17 @@ public class MyController {
         model.addAttribute("names",names);
         return "iterate";
     }
+
+
+    @GetMapping("/aboutCondition")
+    public String aboutCondition(Model model){
+        model.addAttribute("isActive", false);
+        model.addAttribute("gender", "f");
+
+        List<Integer> myList =List.of(15, 415, 454, 541);
+        model.addAttribute("myList", myList);
+        return "condition";
+    }
      
     
 }
