@@ -6,9 +6,9 @@
 </head>
 <body>
       <footer>
-        <div class="container" th:fragment="footer1">
-          <h1>This is the footer tag</h1>
-          <h2>This is the footer tag2</h2>
+        <div class="container" th:fragment="footer1(title,subtitle)">
+          <h1>This is the footer tag <span th:text="${title}"></span></h1>
+          <h2>This is the footer tag2 <span th:text="${subtitle}"></span></h2>
           <h3>This is the footer tag3</h3>
         </div>
       </footer>

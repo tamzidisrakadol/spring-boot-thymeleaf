@@ -9,6 +9,6 @@
 
 <!--    fragment-> replace(it will replace the host tag), insert(it will add the extra footer into the host tag), include(some sort of same as insert)-->
 
-    <footer th:replace="footer::footer1"></footer>
+    <footer th:replace="footer::footer1(${title},${subtitle})"></footer>
 </body>
 </html>

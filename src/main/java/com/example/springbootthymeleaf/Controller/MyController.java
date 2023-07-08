@@ -37,7 +37,9 @@ public class MyController {
     }
 
     @GetMapping("/footerService")
-    public String aboutFragment(){
+    public String aboutFragment(Model model){
+        model.addAttribute("title","Title header Tamzid Israk");
+        model.addAttribute("subtitle","Subtitle from Israk");
         return "footerService";
     }
      
