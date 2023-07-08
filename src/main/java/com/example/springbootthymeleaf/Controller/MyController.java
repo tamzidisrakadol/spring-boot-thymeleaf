@@ -5,10 +5,6 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-
 
 
 //RequestMapping is only for html file + we can also set method inside it
@@ -38,6 +34,11 @@ public class MyController {
         List<Integer> myList =List.of(15, 415, 454, 541);
         model.addAttribute("myList", myList);
         return "condition";
+    }
+
+    @GetMapping("/footerService")
+    public String aboutFragment(){
+        return "footerService";
     }
      
     
