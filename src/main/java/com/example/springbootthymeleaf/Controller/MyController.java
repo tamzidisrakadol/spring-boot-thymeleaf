@@ -42,6 +42,11 @@ public class MyController {
         model.addAttribute("subtitle","Subtitle from Israk");
         return "footerService";
     }
+
+    @GetMapping("/contact")
+    public String newBase(){
+        return "contact";
+    }
      
     
 }
